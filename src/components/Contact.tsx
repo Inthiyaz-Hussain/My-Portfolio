@@ -1,0 +1,76 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Mail, MapPin, Send } from 'lucide-react';
+
+export default function Contact() {
+  return (
+    <section id="contact" className="py-20 relative">
+      <motion.h2 
+        className="text-4xl font-bold mb-16 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        Get In <span className="text-gradient">Touch</span>
+      </motion.h2>
+
+      <div className="grid md:grid-cols-2 gap-12">
+        <motion.div 
+          className="flex flex-col gap-8"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl font-bold text-white">Let's build something amazing together.</h3>
+          <p className="text-slate-400 leading-relaxed">
+            I'm currently available for freelance work and full-time opportunities. If you have a project that needs some creative magic, I'd love to hear about it.
+          </p>
+          
+          <div className="flex flex-col gap-6 mt-4">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-full glass-panel flex items-center justify-center text-[#00ffcc]">
+                <Mail size={24} />
+              </div>
+              <div>
+                <p className="text-sm text-slate-500 mb-1">Email</p>
+                <p className="font-medium text-white text-lg">hello@inthiyaz.dev</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-full glass-panel flex items-center justify-center text-[#00ffcc]">
+                <MapPin size={24} />
+              </div>
+              <div>
+                <p className="text-sm text-slate-500 mb-1">Location</p>
+                <p className="font-medium text-white text-lg">Remote / Worldwide</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.form 
+          className="glass-panel p-8 rounded-3xl flex flex-col gap-6"
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
+          <div className="flex flex-col gap-2">
+            <label htmlFor="name" className="text-sm font-medium text-slate-300">Name</label>
+            <input type="text" id="name" className="w-full bg-[#0a0a0f]/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-[#00ffcc] transition-colors" placeholder="John Doe" />
+          </div>
+          <div className="flex flex-col gap-2">
+            <label htmlFor="email" className="text-sm font-medium text-slate-300">Email</label>
+            <input type="email" id="email" className="w-full bg-[#0a0a0f]/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-[#00ffcc] transition-colors" placeholder="john@example.com" />
+          </div>
+          <div className="flex flex-col gap-2">
+            <label htmlFor="message" className="text-sm font-medium text-slate-300">Message</label>
+            <textarea id="message" rows={4} className="w-full bg-[#0a0a0f]/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-[#00ffcc] transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="button" className="w-full py-4 rounded-xl bg-gradient-to-r from-[#00ffcc] to-[#ff00ff] text-black font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity mt-2">
+            Send Message <Send size={18} />
+          </button>
+        </motion.form>
+      </div>
+    </section>
+  );
+}
