@@ -8,14 +8,14 @@ export default function Projects() {
       title: "PG Bed Booking Platform",
       desc: "A web app to find and book beds in PGs. Users can search by location, price, and sharing type like single, double, or triple. Shows real-time bed availability with instant booking and owner contact. Built for students and working professionals.",
       img: "/pgroom.png",
-      tags: ["React", "TypeScript", "Tailwind v4", "Express.js", "MongoDB"],
+      tags: ["React", "TypeScript", "TailwindCSS", "Express.js", "MongoDB"],
     },
-    {
-      title: "E-Commerce Platform",
-      desc: "A full-stack e-commerce solution with dynamic product management, cart functionality, and secure checkout.",
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      tags: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-    },
+    // {
+    //   title: "E-Commerce Platform",
+    //   desc: "A full-stack e-commerce solution with dynamic product management, cart functionality, and secure checkout.",
+    //   img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    //   tags: ["Next.js", "Node.js", "MongoDB", "Stripe"],
+    // },
   ];
 
   return (

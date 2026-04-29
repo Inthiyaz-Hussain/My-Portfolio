@@ -12,7 +12,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = ["About", "Skills", "Projects", "Contact"];
+  const links = ["My Work", "About", "Skills", "Projects", "Contact"];
 
   return (
     <motion.header
@@ -34,8 +34,8 @@ export default function Navbar() {
           {links.map((link) => (
             <a
               key={link}
-              href={`#${link.toLowerCase()}`}
-              className="text-slate-300 hover:text-[#00ffcc] transition-colors relative group"
+              href={`#${link.toLowerCase().replace(/\s+/g, "")}`}
+              className="text-slate-100 hover:text-[#00ffcc] transition-colors relative group"
             >
               {link}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#00ffcc] transition-all group-hover:w-full"></span>
@@ -67,7 +67,7 @@ export default function Navbar() {
             {links.map((link) => (
               <a
                 key={link}
-                href={`#${link.toLowerCase()}`}
+                href={`#${link.toLowerCase().replace(/\s+/g, "")}`}
                 className="text-xl font-medium text-slate-300 hover:text-[#00ffcc]"
                 onClick={() => setMobileOpen(false)}
               >
