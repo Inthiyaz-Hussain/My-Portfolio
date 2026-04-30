@@ -10,12 +10,12 @@ export default function Projects() {
       img: "/pgroom.png",
       tags: ["React", "TypeScript", "TailwindCSS", "Express.js", "MongoDB"],
     },
-    // {
-    //   title: "E-Commerce Platform",
-    //   desc: "A full-stack e-commerce solution with dynamic product management, cart functionality, and secure checkout.",
-    //   img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    //   tags: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-    // },
+    {
+      title: "Finance Dashboard",
+      desc: "FinanceTracker is a full-featured finance dashboard that helps users monitor their income, expenses, and financial trends. The application provides an intuitive interface for viewing financial summaries, analyzing spending patterns, and managing transactions with role-based access control.",
+      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      tags: ["React 18", "TailwindCSS", "Supabase Auth", "Vite"],
+    },
   ];
 
   return (
