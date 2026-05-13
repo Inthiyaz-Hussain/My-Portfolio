@@ -1,5 +1,4 @@
-import React from "react";
-import { GitBranch, Briefcase, MessageSquare, Terminal } from "lucide-react";
+import { GitBranch, Briefcase, MessageSquare } from "lucide-react";
 
 export default function Footer() {
   return (
