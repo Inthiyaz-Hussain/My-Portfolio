@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, GitBranch } from "lucide-react";
 
-export default function MyWork() {
+export default function Work() {
   const pastProjects = [
     {
       title: "Swiftora - Smart Logistics & Real time Tracking",
@@ -60,7 +60,7 @@ export default function MyWork() {
   ];
 
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="work" className="py-20 relative">
       <motion.h2
         className="text-4xl font-bold mb-16 text-center"
         initial={{ opacity: 0, y: 20 }}

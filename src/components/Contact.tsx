@@ -21,13 +21,38 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <h3 className="text-3xl font-bold text-white">
-            Let's build something amazing together.
+            Let's build something impactful together.
           </h3>
           <p className="text-slate-400 leading-relaxed">
             I'm currently available for freelance work and full-time
             opportunities. If you have a project that needs some creative magic,
-            I'd love to hear about it.
+            I'd love to hear about it. I build fast, responsive, and modern web
+            applications using Angular, JavaScript, and frontend technologies.
+            Available for freelance projects, internships, and full-time
+            opportunities worldwide.
           </p>
+
+          <div className="flex flex-wrap gap-3 mt-2">
+            <span className="px-4 py-2 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 text-[#00ffcc] text-sm font-medium">
+              Frontend Developer
+            </span>
+            <span className="px-4 py-2 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 text-[#00ffcc] text-sm font-medium">
+              Responsive UI Design
+            </span>
+            <span className="px-4 py-2 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 text-[#00ffcc] text-sm font-medium">
+              React Applications
+            </span>
+
+            <span className="px-4 py-2 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 text-[#00ffcc] text-sm font-medium">
+              Landing Pages
+            </span>
+            <span className="px-4 py-2 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 text-[#00ffcc] text-sm font-medium">
+              Portfolio Websites
+            </span>
+            <span className="px-4 py-2 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 text-[#00ffcc] text-sm font-medium">
+              API Integration
+            </span>
+          </div>
 
           <div className="flex flex-col gap-6 mt-4">
             <div className="flex items-center gap-4">
@@ -100,7 +125,7 @@ export default function Contact() {
               id="message"
               rows={4}
               className="w-full bg-[#0a0a0f]/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-[#00ffcc] transition-colors resize-none"
-              placeholder="Tell me about your project..."
+              placeholder="Tell me about your project, role, or idea..."
             ></textarea>
           </div>
           <button

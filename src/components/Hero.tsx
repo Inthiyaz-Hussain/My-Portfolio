@@ -48,7 +48,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <a
-            href="#mywork"
+            href="#work"
             className="px-8 py-4 rounded-lg bg-[#00ffcc] text-black font-bold flex items-center justify-center gap-2 hover:bg-[#00e6b8] transition-colors shadow-[0_0_20px_rgba(0,255,204,0.3)]"
           >
             View My Work <ArrowRight size={20} />

@@ -12,7 +12,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = ["My Work", "About", "Skills", "Projects", "Contact"];
+  const links = ["Work", "About", "Skills", "Projects", "Contact"];
 
   return (
     <motion.header
