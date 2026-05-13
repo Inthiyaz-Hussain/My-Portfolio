@@ -26,7 +26,7 @@ export default function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        Featured <span className="text-gradient">Projects</span>
+        Featured <span className="text-gradient">Projects</span>{" "}
       </motion.h2>
 
       <div className="flex flex-col gap-16">
