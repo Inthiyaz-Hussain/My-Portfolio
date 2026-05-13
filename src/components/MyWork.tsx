@@ -1,85 +1,35 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, GitBranch, FolderGit2 } from "lucide-react";
+import { ExternalLink, GitBranch } from "lucide-react";
 
 export default function MyWork() {
   const pastProjects = [
     {
-      title: "Past Project One",
-      desc: "Description of a project you completed before. Highlight the key problem it solved.",
-      img: "https://via.placeholder.com/400x200",
-      tags: ["HTML", "CSS", "JS"],
+      title: "WebSite for a Restaurant",
+      desc: "Responsive restaurant web app showcasing menu, dishes, and dining services with a clean, modern UI. Focuses on smooth navigation and engaging visuals for better user experience. Built and deployed on Vercel, demonstrating real-world frontend development skills.",
+      img: "restuarent.png",
+      tags: ["Typescript", "TailwindCSS", "JS", "Firebase", "React.js"],
+      link: "https://restaurent-food-chi.vercel.app/",
+      github: "https://github.com/Inthiyaz-Hussain/Restaurent_website",
     },
     {
-      title: "Past Project Two",
-      desc: "Another earlier project showing your progression and learning over time.",
-      img: "https://via.placeholder.com/400x200",
+      title: "Edureka E-Learning Platform Clone",
+      desc: "Responsive e-learning website inspired by Edureka, showcasing courses, categories, and structured content layout. Focuses on clean UI, reusable components, and smooth navigation for better user experience.",
+      img: "edureka.png",
       tags: ["React", "Node.js"],
+      link: "https://edureka-in.netlify.app/",
+      github: "https://github.com/Inthiyaz-Hussain/Edureka-Tour",
     },
     {
-      title: "Past Project Three",
-      desc: "An older web application or utility script you built.",
-      img: "https://via.placeholder.com/400x200",
+      title: "Guess My Number Game",
+      desc: "Interactive number guessing game built with JavaScript, where users try to guess a random number with score tracking. Demonstrates DOM manipulation, event handling, and game logic implementation.",
+      img: "game.png",
       tags: ["Python", "Django"],
+      link: "https://guess-my-number-in.netlify.app/",
+      github: "https://github.com/Inthiyaz-Hussain/Guess-My-Number",
     },
   ];
 
   return (
-    // <section id="mywork" className="py-20 relative">
-    //   <motion.h2
-    //     className="text-4xl font-bold mb-16 text-center"
-    //     initial={{ opacity: 0, y: 20 }}
-    //     whileInView={{ opacity: 1, y: 0 }}
-    //     viewport={{ once: true }}
-    //   >
-    //     My <span className="text-gradient">Work</span>
-    //   </motion.h2>
-
-    //   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-    //     {pastProjects.map((project, idx) => (
-    //       <motion.div
-    //         key={idx}
-    //         className="glass-panel p-8 rounded-2xl flex flex-col hover:-translate-y-2 transition-transform duration-300 group"
-    //         initial={{ opacity: 0, y: 30 }}
-    //         whileInView={{ opacity: 1, y: 0 }}
-    //         viewport={{ once: true }}
-    //         transition={{ delay: idx * 0.1 }}
-    //       >
-    //         <div className="flex justify-between items-center mb-6">
-    //           <FolderGit2 className="text-[#00ffcc]" size={40} />
-    //           <div className="flex gap-3">
-    //             <a
-    //               href="#"
-    //               className="text-slate-400 hover:text-[#00ffcc] transition-colors"
-    //             >
-    //               <GitBranch size={20} />
-    //             </a>
-    //             <a
-    //               href="#"
-    //               className="text-slate-400 hover:text-[#00ffcc] transition-colors"
-    //             >
-    //               <ExternalLink size={20} />
-    //             </a>
-    //           </div>
-    //         </div>
-    //         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#00ffcc] transition-colors">
-    //           {project.title}
-    //         </h3>
-    //         <p className="text-slate-400 mb-6 flex-grow">{project.desc}</p>
-    //         <div className="flex flex-wrap gap-2 mt-auto">
-    //           {project.tags.map((tag, i) => (
-    //             <span
-    //               key={i}
-    //               className="text-xs font-mono text-[#00ffcc]/80 bg-[#00ffcc]/10 px-2 py-1 rounded"
-    //             >
-    //               {tag}
-    //             </span>
-    //           ))}
-    //         </div>
-    //       </motion.div>
-    //     ))}
-    //   </div>
-    // </section>
     <section id="projects" className="py-20 relative">
       <motion.h2
         className="text-4xl font-bold mb-16 text-center"
@@ -87,7 +37,7 @@ export default function MyWork() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        Featured <span className="text-gradient">Projects</span>
+        My <span className="text-gradient">Work</span>
       </motion.h2>
 
       <div className="flex flex-col gap-16">
@@ -129,14 +79,18 @@ export default function MyWork() {
               </div>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href={project.github}
                   className="p-3 rounded-full glass-panel hover:bg-white/10 transition-colors text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GitBranch size={20} />
                 </a>
                 <a
-                  href="#"
+                  href={project.link}
                   className="p-3 rounded-full glass-panel hover:bg-white/10 transition-colors text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <ExternalLink size={20} />
                 </a>
