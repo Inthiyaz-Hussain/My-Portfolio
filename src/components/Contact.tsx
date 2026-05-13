@@ -85,6 +85,8 @@ export default function Contact() {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          action="https://formspree.io/f/xeendden" //Formspree.ai platform added and signup for free anf new form and enter mail address as the target and it will give you end point and use that endpoint here
+          method="POST"
         >
           <div className="flex flex-col gap-2">
             <label
@@ -96,6 +98,8 @@ export default function Contact() {
             <input
               type="text"
               id="name"
+              name="name"
+              required
               className="w-full bg-[#0a0a0f]/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-[#00ffcc] transition-colors"
               placeholder="John Doe"
             />
@@ -110,6 +114,8 @@ export default function Contact() {
             <input
               type="email"
               id="email"
+              name="email"
+              required
               className="w-full bg-[#0a0a0f]/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-[#00ffcc] transition-colors"
               placeholder="john@example.com"
             />
@@ -123,13 +129,15 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              name="message"
+              required
               rows={4}
               className="w-full bg-[#0a0a0f]/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-[#00ffcc] transition-colors resize-none"
               placeholder="Tell me about your project, role, or idea..."
             ></textarea>
           </div>
           <button
-            type="button"
+            type="submit"
             className="w-full py-4 rounded-xl bg-gradient-to-r from-[#00ffcc] to-[#ff00ff] text-black font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity mt-2"
           >
             Send Message <Send size={18} />
