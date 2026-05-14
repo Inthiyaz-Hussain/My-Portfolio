@@ -27,7 +27,7 @@ export default function Navbar() {
           <img
             src="/HWC-bg.png"
             alt="Hussain With Code Logo"
-            className="h-22 w-60 object-contain"
+            className="h-16 w-60 object-contain"
           />
         </div>
 

@@ -4,8 +4,16 @@ export default function Footer() {
   return (
     <footer className="w-full border-t border-white/10 bg-[#0a0a0f] py-12 mt-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="flex items-center gap-2 text-xl font-bold tracking-tighter">
+        {/* <div className="flex items-center gap-2 text-xl font-bold tracking-tighter">
           <span className="text-white">Inthiyaz Hussain G</span>
+        </div> */}
+        <div className="flex items-center gap-2 text-2xl font-bold tracking-tighter">
+          {/* <Terminal className="text-[#00ffcc]" size={28} /> */}
+          <img
+            src="/HWC-bg.png"
+            alt="Hussain With Code Logo"
+            className="h-16 w-50 object-contain"
+          />
         </div>
 
         <p className="text-slate-500 text-sm">

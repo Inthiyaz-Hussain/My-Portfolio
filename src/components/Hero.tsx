@@ -14,15 +14,6 @@ export default function Hero() {
     >
       {/* Left Column: Content */}
       <div className="flex flex-1 flex-col items-center lg:items-start text-center lg:text-left z-10 w-full">
-        {/* <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-xs font-semibold tracking-widest text-[#00ffcc] uppercase mb-8"
-        >
-          Available for Frontend and Full Stack Roles
-        </motion.div> */}
-
         <motion.h1
           className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 leading-tight"
           initial={{ opacity: 0, y: 20 }}
@@ -60,6 +51,7 @@ export default function Hero() {
           </a>
           <a
             href="/Developer-Inthiyaz-Resume.pdf"
+            target="_blank"
             className="px-8 py-4 rounded-lg glass-panel font-medium flex items-center justify-center gap-2 hover:bg-white/10 transition-colors text-white"
           >
             View My Resume <ArrowRightCircle size={20} />
@@ -98,7 +90,7 @@ export default function Hero() {
             Hire Me <Briefcase size={18} />
           </a>
           <a
-            href="https://wa.me/"
+            href="https://wa.me/916302854691"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full border border-[#25D366]/30 bg-[#25D366]/10 text-[#25D366] font-medium flex items-center justify-center gap-2 hover:bg-[#25D366]/20 transition-colors shadow-sm"
