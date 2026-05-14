@@ -24,13 +24,15 @@ export default function Navbar() {
       <div className="w-full max-w-7xl px-6 md:px-12 flex justify-between items-center">
         <div className="flex items-center gap-2 text-2xl font-bold tracking-tighter">
           {/* <Terminal className="text-[#00ffcc]" size={28} /> */}
-          <pre>
-            <span className="text-white">Inthiyaz Hussain Gokavaram</span>
-          </pre>
+          <img
+            src="/HWC-bg.png"
+            alt="Hussain With Code Logo"
+            className="h-22 w-60 object-contain"
+          />
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
           {links.map((link) => (
             <a
               key={link}
@@ -41,9 +43,6 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#00ffcc] transition-all group-hover:w-full"></span>
             </a>
           ))}
-          {/* <a href="#contact" className="px-5 py-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all text-[#00ffcc] ml-4">
-            Hire Me
-          </a> */}
         </nav>
 
         {/* Mobile Toggle */}

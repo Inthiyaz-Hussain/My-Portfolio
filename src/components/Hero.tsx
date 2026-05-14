@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import {
+  ArrowRight,
+  Download,
+  Briefcase,
+  MessageCircle,
+  ArrowRightCircle,
+} from "lucide-react";
 
 export default function Hero() {
   return (
@@ -25,7 +31,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           Building Fast, Scalable Web Apps <br className="hidden lg:block" />
-          <span className="text-gradient">That Converts</span>
+          <span className="text-gradient">That Convert</span>
         </motion.h1>
 
         <motion.p
@@ -54,31 +60,52 @@ export default function Hero() {
             View My Work <ArrowRight size={20} />
           </a>
           <a
-            href="#"
+            href="/Developer-Inthiyaz-Resume.pdf"
             className="px-8 py-4 rounded-lg glass-panel font-medium flex items-center justify-center gap-2 hover:bg-white/10 transition-colors text-white"
           >
-            Download Resume <Download size={20} />
+            View My Resume <ArrowRightCircle size={20} />
           </a>
         </motion.div>
       </div>
 
       {/* Right Column: Profile Image */}
       <motion.div
-        className="flex flex-1 justify-center items-center relative w-full mt-12 lg:mt-0"
+        className="flex flex-1 flex-col justify-center items-center relative w-full mt-12 lg:mt-0 gap-8"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        {/* Soft Glow / Gradient Behind Image */}
-        <div className="absolute w-[280px] sm:w-[320px] lg:w-[350px] aspect-square bg-gradient-to-tr from-[#00ffcc] to-[#ff00ff] rounded-full blur-3xl opacity-30 mix-blend-screen"></div>
+        {/* Image and Glow Wrapper */}
+        <div className="relative flex justify-center items-center">
+          {/* Soft Glow / Gradient Behind Image */}
+          <div className="absolute w-[280px] sm:w-[320px] lg:w-[350px] aspect-square bg-gradient-to-tr from-[#00ffcc] to-[#ff00ff] rounded-full blur-3xl opacity-30 mix-blend-screen"></div>
 
-        {/* Image Container */}
-        <div className="relative z-10 w-[280px] sm:w-[320px] lg:w-[350px] aspect-square rounded-full border border-white/10 shadow-[0_0_40px_rgba(0,255,204,0.1)] flex justify-center items-center bg-[#0a0a0f]/50 overflow-hidden">
-          <img
-            src="/original.png"
-            alt="G. Inthiyaz Hussain"
-            className="w-full h-full object-cover object-center"
-          />
+          {/* Image Container */}
+          <div className="relative z-10 w-[280px] sm:w-[320px] lg:w-[350px] aspect-square rounded-full border border-white/10 shadow-[0_0_40px_rgba(0,255,204,0.1)] flex justify-center items-center bg-[#0a0a0f]/50 overflow-hidden">
+            <img
+              src="/original.png"
+              alt="G. Inthiyaz Hussain"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
+
+        {/* Action Buttons Under Profile Image */}
+        <div className="flex flex-wrap justify-center gap-4 z-10 relative">
+          <a
+            href="#contact"
+            className="px-6 py-3 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 text-[#00ffcc] font-medium flex items-center justify-center gap-2 hover:bg-[#00ffcc]/20 transition-colors shadow-sm"
+          >
+            Hire Me <Briefcase size={18} />
+          </a>
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-full border border-[#25D366]/30 bg-[#25D366]/10 text-[#25D366] font-medium flex items-center justify-center gap-2 hover:bg-[#25D366]/20 transition-colors shadow-sm"
+          >
+            WhatsApp Me <MessageCircle size={18} />
+          </a>
         </div>
       </motion.div>
     </section>

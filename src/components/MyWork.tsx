@@ -102,7 +102,7 @@ export default function Work() {
                 className={`flex flex-wrap gap-3 mb-8 ${idx % 2 !== 0 ? "md:justify-end" : ""} w-full`}
               >
                 {project.tags.map((tag, i) => (
-                  <span key={i} className="text-sm font-mono text-[#00ffcc]">
+                  <span key={i} className="text-sm font-mono ">
                     {tag}
                   </span>
                 ))}

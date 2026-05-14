@@ -14,7 +14,7 @@ export default function Footer() {
 
         <div className="flex gap-4">
           <a
-            href="#"
+            href="https://github.com/Inthiyaz-Hussain"
             className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-[#00ffcc] hover:bg-white/10 transition-all"
           >
             <GitBranch size={18} />

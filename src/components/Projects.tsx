@@ -5,7 +5,7 @@ export default function Projects() {
   const projects = [
     {
       title: "PG Bed Booking Platform",
-      desc: "A web app to find and book beds in PGs. Users can search by location, price, and sharing type like single, double, or triple. Shows real-time bed availability with instant booking and owner contact. Built for students and working professionals.",
+      desc: "Build PG aggregator platform helping users find nearby PGs with live bed availability. A web app to find and book beds in PGs. Users can search by location, price, and sharing type like single, double, or triple. Shows real-time bed availability with instant booking and owner contact. Built for students and working professionals.",
       img: "/pgroom.png",
       tags: ["React", "TypeScript", "TailwindCSS", "Express.js", "MongoDB"],
     },
