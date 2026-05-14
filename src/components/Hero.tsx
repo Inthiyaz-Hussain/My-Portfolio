@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Download,
   Briefcase,
   MessageCircle,
   ArrowRightCircle,
