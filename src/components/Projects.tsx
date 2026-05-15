@@ -78,6 +78,9 @@ export default function Projects() {
                 >
                   <ExternalLink size={20} />
                 </a>
+                <span className="px-4 py-2 rounded-full glass-panel flex items-center justify-center text-sm font-medium text-slate-400 cursor-not-allowed opacity-80 border border-white/5">
+                  Coming Soon
+                </span>
               </div>
             </div>
           </motion.div>

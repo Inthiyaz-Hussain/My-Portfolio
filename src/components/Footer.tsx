@@ -1,5 +1,4 @@
 import { GitBranch, Briefcase, MessageSquare } from "lucide-react";
-
 export default function Footer() {
   return (
     <footer className="w-full border-t border-white/10 bg-[#0a0a0f] py-12 mt-10">
@@ -27,6 +26,24 @@ export default function Footer() {
           >
             <GitBranch size={18} />
           </a>
+          {/* <a
+            href="#"
+            className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-[#00ffcc] hover:bg-white/10 transition-all"
+          >
+            <FacebookIcon size={18} />
+          </a>
+          <a
+            href="#"
+            className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-[#00ffcc] hover:bg-white/10 transition-all"
+          >
+            <InstagramIcon size={18} />
+          </a>
+          <a
+            href="#"
+            className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-[#00ffcc] hover:bg-white/10 transition-all"
+          >
+            <YoutubeIcon size={18} />
+          </a> */}
           <a
             href="#"
             className="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-[#00ffcc] hover:bg-white/10 transition-all"
